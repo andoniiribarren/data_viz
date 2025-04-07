@@ -1,23 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Título</title>
+  <title>Visualizaciones de gráficos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .chart-section {
+      background-color: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .chart-section h2 {
+      margin-top: 0;
+      color: #4a90e2;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Area Chart1</h1>
-  <img src="images/area_chart1.png" alt="Area chart">
-</body>
-<body>
-  <h1>Area Chart detail</h1>
-  <img src="images/area_chart2.png" alt="Area chart2">
-</body>
-<body>
-  <h1>Parallel coordinates graph</h1>
-  <img src="images/parallel_cordinate.png" alt="Parallel cord">
-</body>
-<body>
-  <h1>Horizon graph</h1>
-  <img src="images/horizon_graph.png" alt="Horizon graph">
+
+  <header>
+    <h1>Visualizaciones de Datos</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="chart-section">
+      <h2>Area Chart 1</h2>
+      <figure>
+        <img src="images/area_chart1.png" alt="Area chart 1">
+        <figcaption>Fuente de datos: Conexión a Yahoo Finance en Python (Stock Market de Microsoft).</figcaption>
+      </figure>
+    </div>
+
+    <div class="chart-section">
+      <h2>Area Chart Detail</h2>
+      <figure>
+        <img src="images/area_chart2.png" alt="Area chart 2">
+        <figcaption>Fuente de datos: Conexión a Yahoo Finance en Python (Stock Market de Microsoft).</figcaption>
+      </figure>
+    </div>
+
+    <div class="chart-section">
+      <h2>Parallel Coordinates Graph</h2>
+      <figure>
+        <img src="images/parallel_cordinates.png" alt="Parallel coordinates">
+        <figcaption>Fuente de datos: CSV de nutrientes desde <a href="https://github.com/syntagmatic/parallel-coordinates/blob/master/examples/data/nutrients.csv" target="_blank">GitHub</a>.</figcaption>
+      </figure>
+    </div>
+
+    <div class="chart-section">
+      <h2>Horizon Graph</h2>
+      <figure>
+        <img src="images/horizon_graph.png" alt="Horizon graph">
+        <figcaption>Fuente de datos: Dataset meteorológico de <a href="https://www.kaggle.com/datasets/muthuj7/weather-dataset/data" target="_blank">Kaggle</a>.</figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 - Visualizaciones creadas por Andoni Iribarren con matplotlib (Python)
+  </footer>
+
 </body>
 </html>
